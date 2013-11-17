@@ -1,0 +1,14 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=/Users/pyoussef/workspace/personal/stitch/libdir
+includedir=/Users/pyoussef/workspace/personal/stitch/libdir
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 52.52.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir} -lavutil 
+Libs.private: -lm
+Cflags: -I${includedir}

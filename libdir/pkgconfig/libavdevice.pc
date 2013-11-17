@@ -1,0 +1,14 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=/Users/pyoussef/workspace/personal/stitch/libdir
+includedir=/Users/pyoussef/workspace/personal/stitch/libdir
+
+Name: libavdevice
+Description: FFmpeg device handling library
+Version: 55.5.100
+Requires: 
+Requires.private: libavfilter = 3.90.102, libavformat = 55.21.100
+Conflicts:
+Libs: -L${libdir} -lavdevice 
+Libs.private: -liconv -L/usr/local/lib -lSDLmain -lSDL -Wl,-framework,Cocoa -lssl -lcrypto -lxvidcore -lx264 -lvpx -lvpx -lvorbisenc -lvorbis -logg -lvo-aacenc -ltheoraenc -ltheoradec -logg -lspeex -L/usr/local/Cellar/schroedinger/1.0.11/lib -lschroedinger-1.0 -L/usr/local/Cellar/opus/1.0.3/lib -lopus -lopenjpeg -lopencore-amrwb -lopencore-amrnb -lmp3lame -L/usr/local/Cellar/freetype/2.5.0.1/lib -lfreetype -lfdk-aac -lfaac -lcelt0 -lcelt0 -L/usr/local/Cellar/libass/0.10.2/lib -lass -laacplus -lm -lbz2 -lz
+Cflags: -I${includedir}
